@@ -1,0 +1,50 @@
+<!-- Card UI Component -->
+<template id="card-template">
+  <article class="card" id="card-{{id}}" data-id="{{id}}">
+    <!-- Card Media & Category Tag -->
+    <div class="media" style="--c:{{color}}" data-act="details" title="Click to view full details & AI prompts">
+      {{imageTag}}
+      <span class="cat-tag"><i style="background:{{color}}"></i>{{categoryName}}</span>
+      <span class="view-pill"><span class="material-symbols-rounded">visibility</span> Details</span>
+    </div>
+
+    <!-- Card Body: Minimal by default, expands on hover -->
+    <div class="body" data-act="details" title="Click to view full details & AI prompts">
+      <div class="trow">
+        <h3>{{name}}</h3>
+        <span class="stage-badge" style="background:{{tint}}; color:{{color}}">{{stage}}</span>
+      </div>
+
+      <!-- Hover Details Preview: Hidden by default, reveals on hover -->
+      <div class="card-hover-preview">
+        <p class="purpose">{{purpose}}</p>
+        <dl class="meta">
+          <div><dt>Inputs</dt><dd>{{inputs}}</dd></div>
+          <div><dt>Outputs</dt><dd>{{outputs}}</dd></div>
+          <div class="wide"><dt>Visual structure</dt><dd>{{structure}}</dd></div>
+        </dl>
+        <div class="example"><b>Example</b>{{example}}</div>
+      </div>
+    </div>
+
+    <!-- Card Actions Toolbar -->
+    <div class="actions">
+      <button class="act-btn {{favedClass}}" data-act="fav" title="Favorite">
+        <span class="material-symbols-rounded">{{favIcon}}</span>
+        {{favText}}
+      </button>
+      <button class="act-btn {{markedClass}}" data-act="mark" title="Save Bookmark">
+        <span class="material-symbols-rounded">{{markIcon}}</span>
+        {{markText}}
+      </button>
+      <button class="act-btn edit-btn" data-act="edit" title="Edit Card Content & Prompts">
+        <span class="material-symbols-rounded">edit</span>
+        Edit
+      </button>
+      <button class="act-btn details-btn" data-act="details" title="View details and prompt templates">
+        <span class="material-symbols-rounded">open_in_new</span>
+        Details
+      </button>
+    </div>
+  </article>
+</template>

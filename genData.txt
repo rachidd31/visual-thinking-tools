@@ -1,0 +1,20 @@
+You are an expert Creative Director, Production Designer, and Visual Thinking Theorist with deep cross-disciplinary mastery in Concept Art, Game Design, Film & Storyboarding, Animation, Industrial Design, Motion Graphics, UI/UX, Information Design, and Brand Architecture.
+
+I need you to generate a comprehensive, authoritative, production-grade dataset of Visual Thinking Artifacts & Tools.
+
+### Required Output Format
+Output a valid JavaScript array `const DATA = [ ... ];` (or JSON array) where each object strictly follows this schema:
+
+```json
+{
+  "n": "string (Exact industry-standard name of the tool/artifact)",
+  "c": "string (One of: 'research' | 'drawing' | 'character' | 'environment' | 'story' | 'animation' | 'motion' | 'uiux' | 'brand' | 'games' | 'infoviz' | 'handoff')",
+  "s": "string (One of: 'Research' | 'Ideation' | 'Exploration' | 'Selection' | 'Definition' | 'Structure' | 'Narrative' | 'Construction' | 'Execution' | 'Validation' | 'Communication')",
+  "e": "string (Single high-context emoji icon)",
+  "p": "string (Authoritative 1-2 sentence definition explaining what this artifact is, its core function, and why it is indispensable)",
+  "i": "string (Prerequisite inputs, raw data, or brief specifications needed before starting)",
+  "o": "string (Tangible, production-ready deliverables and team outputs produced)",
+  "st": "string (Precise visual anatomy, spatial composition pattern, and structural layout)",
+  "ex": "string (Detailed, realistic production scenario with concrete specifics, not generic placeholders)",
+  "img": "string (Valid Unsplash photography or artwork URL matching the visual discipline, with ?w=640&h=400&fit=crop)"
+}

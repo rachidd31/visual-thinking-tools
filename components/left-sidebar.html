@@ -1,0 +1,87 @@
+<!-- Left Sidebar Navigation & Filter Component -->
+<aside class="left-sidebar" id="leftSidebar">
+  <div class="sidebar-header">
+    <a class="sidebar-logo" href="#">
+      <div class="logo-mark">V</div>
+      <div class="logo-text">
+        <span class="brand-title">Visual Toolkit</span>
+        <span class="brand-sub">by Qwen</span>
+      </div>
+    </a>
+    <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle dark / light theme" aria-label="Toggle theme">
+      <span class="material-symbols-rounded" id="themeIcon">dark_mode</span>
+    </button>
+  </div>
+
+  <div class="sidebar-search">
+    <div class="search-bar">
+      <span class="material-symbols-rounded">search</span>
+      <input id="q" type="text" placeholder="Search artifacts, stages…" autocomplete="off">
+      <button class="search-clear" id="clearBtn" aria-label="Clear">
+        <span class="material-symbols-rounded">close</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="sidebar-scrollable">
+    <!-- Views Section -->
+    <div class="sidebar-section">
+      <div class="section-title">Views</div>
+      <div class="nav-list">
+        <button class="nav-item active" id="viewAllBtn" data-view="all">
+          <span class="material-symbols-rounded">grid_view</span>
+          <span class="item-label">All Artifacts</span>
+          <span class="item-badge" id="totalCountBadge">56</span>
+        </button>
+        <button class="nav-item" id="viewFavBtn" data-view="favs">
+          <span class="material-symbols-rounded">star</span>
+          <span class="item-label">Favorites</span>
+          <span class="item-badge" id="favCountBadge">0</span>
+        </button>
+        <button class="nav-item" id="viewMarkBtn" data-view="marks">
+          <span class="material-symbols-rounded">bookmark</span>
+          <span class="item-label">Bookmarks</span>
+          <span class="item-badge" id="markCountBadge">0</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Quick Add Button -->
+    <div class="sidebar-section">
+      <button class="add-json-btn" id="openJsonModalBtn" title="Add a new card by pasting a JSON object">
+        <span class="material-symbols-rounded">add_circle</span>
+        <span>Add Card from JSON</span>
+      </button>
+    </div>
+
+    <!-- Categories Section -->
+    <div class="sidebar-section">
+      <div class="section-header">
+        <span class="section-title">Categories</span>
+        <button class="reset-btn" id="resetCatBtn" title="Reset category">Reset</button>
+      </div>
+      <div class="category-list" id="sidebarChips">
+        <!-- Injected category navigation items -->
+      </div>
+    </div>
+
+    <!-- Workflow Stages Section -->
+    <div class="sidebar-section">
+      <div class="section-header">
+        <span class="section-title">Workflow Stages</span>
+        <button class="reset-btn" id="resetStageBtn" title="Reset stage">Reset</button>
+      </div>
+      <div class="stage-list" id="sidebarStages">
+        <!-- Injected workflow stages 1..11 -->
+      </div>
+    </div>
+
+    <!-- Bookmarks Quick Access Section -->
+    <div class="sidebar-section">
+      <div class="section-title">Saved Bookmarks</div>
+      <div class="bookmarks-list" id="sidebarBookmarkList">
+        <!-- Injected bookmarked items -->
+      </div>
+    </div>
+  </div>
+</aside>

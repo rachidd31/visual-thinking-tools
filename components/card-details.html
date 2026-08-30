@@ -1,0 +1,144 @@
+<!-- Card Details Popup Modal Component -->
+<div class="modal-backdrop" id="cardModalBackdrop">
+  <div class="modal-dialog" id="cardModalDialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <div class="modal-header-meta">
+        <span class="modal-cat-tag" id="modalCatTag">
+          <i id="modalCatDot"></i>
+          <span id="modalCatName">Category</span>
+        </span>
+        <span class="modal-stage-badge" id="modalStageBadge">Stage</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:4px">
+        <button class="modal-close-btn" id="modalEditBtn" title="Edit this card content & prompts" aria-label="Edit card">
+          <span class="material-symbols-rounded">edit</span>
+        </button>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">
+          <span class="material-symbols-rounded">close</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal Content Body -->
+    <div class="modal-body">
+      
+      <!-- 1. TOOL DEFINITION SECTION -->
+      <section class="modal-section definition-section">
+        <div class="modal-hero">
+          <div class="tool-title-row">
+            <span class="tool-emoji" id="modalEmoji">🎨</span>
+            <h2 id="modalTitle">Tool Name</h2>
+          </div>
+          <div class="definition-highlight">
+            <span class="def-badge">Definition & Purpose</span>
+            <p class="modal-definition-text" id="modalDefinition"></p>
+          </div>
+        </div>
+
+        <div class="specs-grid">
+          <div class="spec-card">
+            <div class="spec-label">
+              <span class="material-symbols-rounded">input</span>
+              <span>Inputs Required</span>
+            </div>
+            <p class="spec-value" id="modalInputs"></p>
+          </div>
+
+          <div class="spec-card">
+            <div class="spec-label">
+              <span class="material-symbols-rounded">output</span>
+              <span>Deliverable Outputs</span>
+            </div>
+            <p class="spec-value" id="modalOutputs"></p>
+          </div>
+
+          <div class="spec-card wide">
+            <div class="spec-label">
+              <span class="material-symbols-rounded">schema</span>
+              <span>Visual Structure & Layout</span>
+            </div>
+            <p class="spec-value" id="modalStructure"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. VISUAL EXAMPLE SECTION -->
+      <section class="modal-section visual-section">
+        <div class="section-heading">
+          <span class="material-symbols-rounded">image</span>
+          <h3>Visual Example</h3>
+        </div>
+        
+        <div class="visual-media-box">
+          <div class="modal-media" id="modalMediaContainer">
+            <img id="modalImage" src="" alt="Visual Example" onerror="ph(this)">
+          </div>
+          <div class="visual-example-details">
+            <span class="example-tag">Production Use Case</span>
+            <p class="example-text" id="modalExample"></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. AI PROMPTS EXAMPLES SECTION -->
+      <section class="modal-section prompts-section">
+        <div class="section-heading">
+          <span class="material-symbols-rounded">smart_toy</span>
+          <h3>AI Prompt Examples</h3>
+        </div>
+        <p class="prompts-sub">Tailored generation and brainstorming prompts based on this tool's exact definition:</p>
+
+        <div class="prompts-container">
+          <!-- Prompt 1: Image / Visual Generation Prompt -->
+          <div class="prompt-card">
+            <div class="prompt-header">
+              <span class="prompt-type-badge">
+                <span class="material-symbols-rounded">palette</span>
+                Visual Prompt (Midjourney / DALL·E 3 / Flux)
+              </span>
+              <button class="copy-prompt-btn" id="copyImgPromptBtn" title="Copy to clipboard">
+                <span class="material-symbols-rounded">content_copy</span>
+                <span>Copy</span>
+              </button>
+            </div>
+            <pre class="prompt-code" id="imagePromptText"></pre>
+          </div>
+
+          <!-- Prompt 2: LLM Assistant / Director Prompt -->
+          <div class="prompt-card">
+            <div class="prompt-header">
+              <span class="prompt-type-badge">
+                <span class="material-symbols-rounded">psychology</span>
+                Director & Brainstorming Prompt (ChatGPT / Claude / Gemini)
+              </span>
+              <button class="copy-prompt-btn" id="copyLlmPromptBtn" title="Copy to clipboard">
+                <span class="material-symbols-rounded">content_copy</span>
+                <span>Copy</span>
+              </button>
+            </div>
+            <pre class="prompt-code" id="llmPromptText"></pre>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Modal Footer Actions -->
+    <div class="modal-footer">
+      <div class="modal-footer-left">
+        <button class="modal-act-btn" id="modalFavBtn">
+          <span class="material-symbols-rounded">star_border</span>
+          <span id="modalFavText">Favorite</span>
+        </button>
+        <button class="modal-act-btn" id="modalMarkBtn">
+          <span class="material-symbols-rounded">bookmark_border</span>
+          <span id="modalMarkText">Bookmark</span>
+        </button>
+      </div>
+      <button class="modal-done-btn" id="modalDoneBtn">Done</button>
+    </div>
+
+  </div>
+</div>

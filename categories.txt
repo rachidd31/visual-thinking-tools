@@ -1,0 +1,166 @@
+Here's the complete category → subcategory (stage) hierarchy, mapping all 275 titles to their production stage (`s` field: Research, Ideation, Exploration, Selection, Definition, Structure, Narrative, Construction, Execution, Validation, Communication).
+
+## 1. research
+- **Research**: Reference Sheet, Ethnographic Field Notes, Site Survey Photography, Precedent Study, Teardown/Benchmarking Analysis, Cultural Context Map, Trend Report
+- **Exploration**: Moodboard, Visual Research Deck, Material Swatch Board, Color Study Palette
+- **Structure**: Competitive Audit Grid
+
+## 2. drawing
+- **Ideation**: Thumbnail Sketch Sheet, Speed Painting
+- **Exploration**: Gesture Drawing Study, Value Study, Line Study/Contour Sketch, Color Key, Comp Sketch
+- **Construction**: Perspective Grid Construction, Orthographic Turnaround, Rough Layout Pass
+- **Selection**: Silhouette Study
+- **Execution**: Master Study/Copy Study
+
+## 3. character
+- **Definition**: Character Design Sheet, Character Bible
+- **Construction**: Character Turnaround (360°), Model Sheet, Facial Construction Guide, Rig Range-of-Motion Sheet
+- **Exploration**: Expression Sheet, Pose Sheet, Color Variant Sheet
+- **Structure**: Costume Breakdown Sheet, Prop & Accessory Callout Sheet, Height/Scale Comparison Chart
+
+## 4. environment
+- **Exploration**: Environment Mood Key, Lighting Study
+- **Definition**: Establishing Shot Painting, Environment Concept Painting
+- **Structure**: Top-Down Level Map, Elevation Drawing, World Map, Section Cut/Cross-Section Diagram
+- **Construction**: Kit-Bash/Modular Asset Sheet, Blockout/Greybox Layout, Set Dressing Plan
+- **Communication**: Prop Density Callout Map
+
+## 5. story
+- **Narrative**: Beat Sheet, Story Spine Diagram, Plot Structure Diagram, Character Arc Chart, Sequence Treatment
+- **Structure**: Script Breakdown (Scene Sheet), Shot List
+- **Ideation**: Tone Board, Visual Target/Key Art
+- **Construction**: Storyboard Panel Sequence, Animatic
+- **Communication**: Pitch Deck (Narrative)
+
+## 6. animation
+- **Definition**: Model Pack
+- **Structure**: Timing Chart, Exposure Sheet (X-Sheet)
+- **Construction**: Key Pose Layout, Breakdown Pose Sheet, In-Between Sheet, Walk Cycle Sheet, Animation Layout Pass
+- **Execution**: Overlap/Follow-Through Diagram, Lip Sync Phoneme Chart
+- **Communication**: Animation Arc Diagram, Rig Control Diagram
+
+## 7. motion
+- **Ideation**: Style Frame, Motion Storyboard
+- **Exploration**: Transition Study, Particle System Reference Board
+- **Definition**: Kinetic Typography Board, Motion Design Bible
+- **Construction**: Logo Animation Breakdown, Camera Move Diagram
+- **Execution**: Easing/Timing Curve Chart, VFX Breakdown Sheet, Compositing Layer Stack Diagram
+- **Communication**: Lower-Third Template Sheet
+
+## 8. uiux
+- **Structure**: Site Map, Information Architecture Diagram, User Flow Diagram
+- **Research**: Persona Sheet, Empathy Map, Usability Test Report, Card Sort Diagram, Heuristic Evaluation Grid
+- **Construction**: Wireframe (Low-Fidelity), High-Fidelity Mockup, Responsive Breakpoint Grid
+- **Execution**: Clickable Prototype, Interaction Spec Sheet, Onboarding Flow Diagram
+- **Narrative**: User Journey Map
+- **Communication**: Design System/Component Library
+
+## 9. brand
+- **Exploration**: Brand Moodboard
+- **Definition**: Logo Construction Grid, Typography System Sheet, Color System Sheet, Brand Voice & Tone Chart
+- **Structure**: Brand Architecture Diagram, Brand Touchpoint Map
+- **Construction**: Icon System Sheet, Pattern/Texture Library, Application Mockup Suite
+- **Validation**: Logo Clearspace & Minimum Size Sheet
+- **Communication**: Brand Guidelines Deck
+
+## 10. games
+- **Definition**: Game Design Document (GDD), Game Mechanic Diagram
+- **Structure**: Level Design Blockout, Minimap/Level Flow Diagram, Skill Tree/Progression Chart
+- **Construction**: UI/HUD Wireframe, Sprite Sheet, Tile Set Sheet
+- **Narrative**: Player Journey Map
+- **Validation**: Economy Balancing Spreadsheet Diagram, Enemy/NPC Encounter Chart
+- **Communication**: Concept Art Pitch Sheet
+
+## 11. infoviz
+- **Structure**: Flowchart, Process Diagram (Swimlane), Organizational Chart, Network/Node Graph
+- **Execution**: Gantt Chart, Sankey Diagram, Heat Map
+- **Communication**: Timeline Infographic, Data Dashboard Mockup, Comparison Matrix, Statistical Infographic
+- **Definition**: Venn/Set Diagram
+
+## 12. handoff
+- **Communication**: Design Spec Sheet (Redlines), Style Guide, Annotated Screen Flow, Production Bible
+- **Structure**: Asset Export Manifest, Naming Convention Guide, File/Folder Structure Diagram, Technical Art Pipeline Diagram
+- **Validation**: QA Bug Report Template, Final Deliverables Checklist
+- **Execution**: Version Control/Changelog Sheet, Localization Spec Sheet
+
+## 13. sound
+- **Exploration**: Sound Palette Reference Board
+- **Definition**: Sound Design Bible
+- **Structure**: SFX Spotting Sheet, Foley Cue Sheet, Foley Prop List
+- **Construction**: Audio Asset Manifest, Ambience/Soundscape Layer Map, Dialogue Recording Script (ADR)
+- **Execution**: Mix Stem Breakdown, Loudness/Mix Level Chart, Spatial Audio Diagram
+- **Communication**: Audio Implementation Diagram
+
+## 14. music
+- **Exploration**: Temp Track Reference Playlist, Instrumentation Palette Board
+- **Structure**: Music Cue Sheet, Composer's Spotting Notes, Song Structure Map, Tempo/BPM Map
+- **Definition**: Leitmotif Chart
+- **Construction**: Score Sketch/Sheet Music Draft, Music Bed Breakdown
+- **Execution**: Stem Mix Chart, Adaptive Music State Diagram
+- **Communication**: Sync License Cue Sheet
+
+## 15. software
+- **Definition**: Technical Design Document (TDD), System Architecture Diagram
+- **Structure**: Database ERD, Class Diagram (UML), Dependency Graph, Deployment Pipeline Diagram
+- **Narrative**: Sequence Diagram (UML), State Machine Diagram, User Story Map
+- **Construction**: Wireframe-to-Code Component Spec
+- **Execution**: Sprint Board/Kanban Board, Feature Flag Matrix
+- **Communication**: API Documentation Sheet, Code Review Annotation Sheet
+
+## 16. video
+- **Structure**: Shooting Script, Shot List (Live Action)
+- **Definition**: Lookbook/Visual Treatment
+- **Construction**: Camera Blocking Diagram, Lighting Diagram
+- **Execution**: Rough Cut Timeline, B-Roll Shot Sheet, Color Grading Reference Board
+- **Validation**: Continuity/Script Supervisor Notes, Video Storyboard-to-Edit Match Sheet
+- **Communication**: Aspect Ratio & Safe Zone Chart, Production Schedule (Call Sheet), Location Scout Sheet
+
+## 17. company
+- **Definition**: Business Model Canvas, Mission/Vision/Values Statement Sheet, Product-Market Fit Canvas
+- **Structure**: Org Chart, Stakeholder Map
+- **Research**: SWOT Analysis Grid
+- **Narrative**: Company Roadmap Timeline
+- **Execution**: OKR/Goal Tracking Chart
+- **Communication**: Company Pitch Deck, Company Culture Deck, Investor One-Pager, Company Handbook
+
+## 18. marketing
+- **Definition**: Marketing Brief, Positioning Statement Map, Messaging Hierarchy Chart
+- **Research**: Customer Persona Sheet, SEO/Keyword Cluster Map
+- **Structure**: Marketing Funnel Diagram, Growth Loop Diagram
+- **Construction**: Landing Page Wireframe, Ad Creative Storyboard
+- **Execution**: Content Calendar, Media Plan/Channel Mix Chart, Email Campaign Flow Diagram
+- **Validation**: A/B Test Comparison Sheet
+
+## 19. campaign
+- **Definition**: Campaign Brief, Campaign Tagline Development Sheet
+- **Ideation**: Campaign Concept Board
+- **Construction**: Campaign Key Visual, Launch Event Storyboard, Out-of-Home (OOH) Mockup Sheet
+- **Structure**: Campaign Rollout Timeline, Cross-Channel Asset Matrix, Social Media Content Grid
+- **Execution**: Influencer/Partnership Map
+- **Validation**: Campaign Performance Dashboard, Campaign Post-Mortem Report
+
+## 20. finance
+- **Structure**: Financial Model Spreadsheet Diagram, Cost Structure Diagram, Cap Table
+- **Execution**: Revenue Waterfall Chart, Cash Flow Diagram, Budget Allocation Chart
+- **Validation**: Unit Economics Breakdown, Break-Even Analysis Chart, ROI/Payback Period Chart
+- **Communication**: P&L Statement Visual Summary, Pricing Tier Comparison Sheet, Investment Round Summary Sheet, Financial Forecast Timeline
+
+## 21. competitor-analysis
+- **Research**: Competitor Feature Matrix, Competitor Pricing Comparison Sheet, Competitor Product Teardown
+- **Structure**: Competitive Positioning Map (2x2), Competitive Landscape Map
+- **Validation**: Competitor SWOT Grid, Feature Gap Analysis Chart, Win/Loss Analysis Sheet, Benchmark Scorecard
+- **Communication**: Market Share Chart, Share-of-Voice Chart, Competitor Messaging Teardown
+
+## 22. project
+- **Definition**: Project Charter
+- **Structure**: Work Breakdown Structure (WBS), RACI Matrix, Dependency Map, Critical Path Diagram
+- **Narrative**: Project Roadmap
+- **Execution**: Gantt Timeline, Resource Allocation Chart, Milestone Tracker, Status Report Dashboard
+- **Validation**: Risk Register/Risk Matrix, Sprint Retrospective Board, Project Post-Mortem
+- **Communication**: Stakeholder Communication Plan
+
+---
+
+**Totals**: 22 categories · 275 artifacts · all 11 stages represented in every category where applicable.
+
+Want this exported as a structured JSON/JS skeleton (category → stage → array of title stubs) so it's ready to receive the full field data next, or should I start generating complete objects now?

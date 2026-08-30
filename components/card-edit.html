@@ -1,0 +1,118 @@
+<!-- Card Edit Modal Component -->
+<div class="modal-backdrop" id="editModalBackdrop">
+  <div class="modal-dialog edit-dialog" id="editModalDialog" role="dialog" aria-modal="true" aria-labelledby="editModalTitle">
+    
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <div class="modal-header-meta">
+        <span class="material-symbols-rounded" style="color:var(--md-primary)">edit_note</span>
+        <h3 id="editModalTitle" style="font:500 18px 'Google Sans'; color:var(--md-on-surface)">Edit Card Content</h3>
+      </div>
+      <button class="modal-close-btn" id="editModalCloseBtn" aria-label="Close edit modal">
+        <span class="material-symbols-rounded">close</span>
+      </button>
+    </div>
+
+    <!-- Edit Form Body -->
+    <form class="modal-body edit-form" id="cardEditForm" onsubmit="return false;">
+      <input type="hidden" id="editCardId" value="">
+
+      <!-- Row 1: Title & Emoji & Stage -->
+      <div class="form-row three-col">
+        <div class="form-group emoji-col">
+          <label for="editEmoji">Emoji</label>
+          <input type="text" id="editEmoji" class="form-input" maxlength="4" placeholder="🎨">
+        </div>
+        <div class="form-group">
+          <label for="editName">Artifact Title</label>
+          <input type="text" id="editName" class="form-input" required placeholder="e.g. Mind Map">
+        </div>
+        <div class="form-group">
+          <label for="editStage">Workflow Stage</label>
+          <select id="editStage" class="form-select"></select>
+        </div>
+      </div>
+
+      <!-- Row 2: Category -->
+      <div class="form-group">
+        <label for="editCategory">Category</label>
+        <select id="editCategory" class="form-select"></select>
+      </div>
+
+      <!-- Definition / Purpose -->
+      <div class="form-group">
+        <label for="editPurpose">Definition & Purpose</label>
+        <textarea id="editPurpose" class="form-textarea" rows="2" placeholder="Define what this artifact is and why it is used..." required></textarea>
+      </div>
+
+      <!-- Image URL & Live Preview -->
+      <div class="form-group">
+        <label for="editImg">Image URL</label>
+        <div class="img-input-row">
+          <input type="url" id="editImg" class="form-input" placeholder="https://images.unsplash.com/...">
+          <button type="button" class="form-preview-btn" id="editImgPreviewBtn">Preview</button>
+        </div>
+        <div class="edit-img-preview-wrap" id="editImgPreviewWrap">
+          <img id="editImgPreview" src="" alt="Preview" onerror="this.style.display='none'">
+        </div>
+      </div>
+
+      <!-- Visual Structure -->
+      <div class="form-group">
+        <label for="editStructure">Visual Structure & Layout</label>
+        <input type="text" id="editStructure" class="form-input" placeholder="e.g. Central node + branching links" required>
+      </div>
+
+      <!-- Inputs & Outputs -->
+      <div class="form-row two-col">
+        <div class="form-group">
+          <label for="editInputs">Inputs Required</label>
+          <input type="text" id="editInputs" class="form-input" placeholder="e.g. Core idea, keywords" required>
+        </div>
+        <div class="form-group">
+          <label for="editOutputs">Deliverable Outputs</label>
+          <input type="text" id="editOutputs" class="form-input" placeholder="e.g. Clusters of associations" required>
+        </div>
+      </div>
+
+      <!-- Production Example -->
+      <div class="form-group">
+        <label for="editExample">Production Example Scenario</label>
+        <textarea id="editExample" class="form-textarea" rows="2" placeholder="Describe a realistic applied scenario..." required></textarea>
+      </div>
+
+      <!-- Custom Prompts Override Section -->
+      <div class="custom-prompts-section">
+        <div class="section-title-sm">
+          <span class="material-symbols-rounded">smart_toy</span>
+          <span>Custom AI Prompts (Optional Overrides)</span>
+        </div>
+
+        <div class="form-group">
+          <label for="editCustomImgPrompt">Visual / Image Prompt (Midjourney / DALL·E)</label>
+          <textarea id="editCustomImgPrompt" class="form-textarea code-font" rows="2" placeholder="Leave empty to use automatically generated prompt..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="editCustomLlmPrompt">Director / LLM Prompt (Claude / ChatGPT / Gemini)</label>
+          <textarea id="editCustomLlmPrompt" class="form-textarea code-font" rows="3" placeholder="Leave empty to use automatically generated prompt..."></textarea>
+        </div>
+      </div>
+    </form>
+
+    <!-- Modal Footer Actions -->
+    <div class="modal-footer">
+      <div class="modal-footer-left">
+        <button type="button" class="modal-act-btn reset-card-btn" id="editResetCardBtn" title="Reset to original default">
+          <span class="material-symbols-rounded">restart_alt</span>
+          <span>Reset Default</span>
+        </button>
+      </div>
+      <div style="display:flex; gap:8px">
+        <button type="button" class="modal-secondary-btn" id="editCancelBtn">Cancel</button>
+        <button type="button" class="modal-primary-btn" id="editSaveBtn">Save Changes</button>
+      </div>
+    </div>
+
+  </div>
+</div>

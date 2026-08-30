@@ -1,0 +1,211 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://visualthinkingtools.org/schemas/toolkit.schema.json",
+  "title": "VisualThinkingToolkit",
+  "description": "JSON Schema defining the shape and structure of the Visual Thinking Toolkit dataset.",
+  "type": "object",
+  "required": [
+    "tools",
+    "categories",
+    "stages"
+  ],
+  "properties": {
+    "tools": {
+      "type": "array",
+      "description": "Collection of visual thinking tools and artifacts.",
+      "items": {
+        "$ref": "#/$defs/VisualThinkingTool"
+      }
+    },
+    "categories": {
+      "type": "object",
+      "description": "Lookup map of visual thinking categories and domain disciplines.",
+      "additionalProperties": {
+        "$ref": "#/$defs/CategoryDefinition"
+      }
+    },
+    "stages": {
+      "type": "array",
+      "description": "Ordered progression of creative workflow stages.",
+      "items": {
+        "$ref": "#/$defs/WorkflowStage"
+      }
+    }
+  },
+  "$defs": {
+    "VisualThinkingTool": {
+      "type": "object",
+      "title": "VisualThinkingTool",
+      "description": "Schema definition for a single visual thinking tool or artifact.",
+      "required": [
+        "n",
+        "c",
+        "s",
+        "p",
+        "i",
+        "o",
+        "st",
+        "ex"
+      ],
+      "properties": {
+        "n": {
+          "type": "string",
+          "description": "The title / name of the visual thinking tool or artifact.",
+          "examples": [
+            "Mind Map",
+            "Moodboard",
+            "Character Turnaround",
+            "Storyboard",
+            "Wireframe"
+          ]
+        },
+        "c": {
+          "type": "string",
+          "description": "Category identifier key linking to one of the defined category definitions.",
+          "enum": [
+            "research",
+            "drawing",
+            "character",
+            "environment",
+            "story",
+            "animation",
+            "motion",
+            "uiux",
+            "brand",
+            "games",
+            "infoviz",
+            "handoff"
+          ]
+        },
+        "s": {
+          "$ref": "#/$defs/WorkflowStage"
+        },
+        "e": {
+          "type": "string",
+          "description": "Representative emoji icon for quick visual identification.",
+          "examples": [
+            "🧠",
+            "🖼",
+            "📌",
+            "💡",
+            "✏️",
+            "🔄",
+            "🎬"
+          ]
+        },
+        "p": {
+          "type": "string",
+          "description": "Core purpose and definition of why and when this artifact is used.",
+          "examples": [
+            "Radiate associations outward from one central concept.",
+            "Translate script into sequential shots with framing & action."
+          ]
+        },
+        "i": {
+          "type": "string",
+          "description": "Prerequisite inputs, raw data, or design briefs required before starting.",
+          "examples": [
+            "Core idea, keywords",
+            "Script, shot grammar",
+            "Approved concept"
+          ]
+        },
+        "o": {
+          "type": "string",
+          "description": "Deliverable outputs and tangible results produced by this artifact.",
+          "examples": [
+            "Clusters of associations, themes",
+            "Panel sequence + notes",
+            "Front / ¾ / side / back views"
+          ]
+        },
+        "st": {
+          "type": "string",
+          "description": "Visual layout, composition pattern, and spatial structure of the artifact.",
+          "examples": [
+            "Central node + branching links",
+            "Framed panels with captions",
+            "Aligned figures on height guides"
+          ]
+        },
+        "ex": {
+          "type": "string",
+          "description": "Real-world production use case and concrete applied scenario.",
+          "examples": [
+            "Center node: eco coffee brand → branches: ritual, craft, warmth, origin, packaging.",
+            "Lighthouse sequence: wide → CU → POV → underwater shot, with camera notes."
+          ]
+        },
+        "img": {
+          "type": "string",
+          "description": "Optional image URL providing a visual reference example.",
+          "format": "uri",
+          "examples": [
+            "https://images.unsplash.com/photo-1558655146-d09347e92766?w=640&h=400&fit=crop"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "CategoryDefinition": {
+      "type": "object",
+      "title": "CategoryDefinition",
+      "description": "Metadata and color branding for a creative discipline / category.",
+      "required": [
+        "n",
+        "c",
+        "tint"
+      ],
+      "properties": {
+        "n": {
+          "type": "string",
+          "description": "Human-readable display name of the category.",
+          "examples": [
+            "Research & Ideation",
+            "Composition & Drawing",
+            "Story & Film"
+          ]
+        },
+        "c": {
+          "type": "string",
+          "description": "Primary accent hex color code for this category.",
+          "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+          "examples": [
+            "#4285f4",
+            "#ea4335",
+            "#34a853"
+          ]
+        },
+        "tint": {
+          "type": "string",
+          "description": "Subtle background tint hex or color code for badges and highlights.",
+          "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+          "examples": [
+            "#e8f0fe",
+            "#fce8e6",
+            "#e6f4ea"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "WorkflowStage": {
+      "type": "string",
+      "title": "WorkflowStage",
+      "description": "The creative development stage at which this tool is predominantly utilized.",
+      "enum": [
+        "Research",
+        "Ideation",
+        "Exploration",
+        "Selection",
+        "Definition",
+        "Structure",
+        "Narrative",
+        "Construction",
+        "Execution",
+        "Validation",
+        "Communication"
+      ]
+    }
+  }
+}

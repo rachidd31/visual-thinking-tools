@@ -1,0 +1,52 @@
+<!-- Add Card from JSON Modal Component -->
+<div class="modal-backdrop" id="jsonModalBackdrop">
+  <div class="modal-dialog edit-dialog" id="jsonModalDialog" role="dialog" aria-modal="true" aria-labelledby="jsonModalTitle">
+    
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <div class="modal-header-meta">
+        <span class="material-symbols-rounded" style="color:var(--md-primary)">data_object</span>
+        <h3 id="jsonModalTitle" style="font:500 18px 'Google Sans'; color:var(--md-on-surface)">Add Card from JSON</h3>
+      </div>
+      <button class="modal-close-btn" id="jsonModalCloseBtn" aria-label="Close JSON modal">
+        <span class="material-symbols-rounded">close</span>
+      </button>
+    </div>
+
+    <!-- JSON Import Body -->
+    <div class="modal-body edit-form">
+      <p style="font-size:13px; color:var(--md-on-surface-variant); margin-top:-4px; line-height:1.5;">
+        Paste a single card JSON object (or an array of objects) matching the schema below:
+      </p>
+
+      <div class="form-group">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+          <label for="jsonInputText">Card JSON Object / Array</label>
+          <button type="button" class="reset-btn" id="jsonFillTemplateBtn" style="font-size:11.5px">Load Template</button>
+        </div>
+        <textarea id="jsonInputText" class="form-textarea code-font" rows="12" placeholder='{\n  "n": "Concept Sketch",\n  "c": "drawing",\n  "s": "Exploration",\n  "e": "✏️",\n  "p": "Quickly explore raw visual ideas.",\n  "i": "Design brief",\n  "o": "Rough sketches",\n  "st": "Loose pencil drawing",\n  "ex": "10 costume sketches for a protagonist."\n}'></textarea>
+      </div>
+
+      <div id="jsonErrorMsg" style="display:none; padding:8px 12px; border-radius:var(--radius-sm); background:rgba(217,48,37,.1); border:1px solid var(--md-error); color:var(--md-error); font-size:12px; line-height:1.4;"></div>
+      
+      <div id="jsonPreviewSummary" style="display:none; padding:8px 12px; border-radius:var(--radius-sm); background:var(--md-surface-variant); border:1px solid var(--md-outline); font-size:12px; color:var(--md-on-surface);">
+        <strong>Ready to import:</strong> <span id="jsonPreviewCount">1 card</span>
+      </div>
+    </div>
+
+    <!-- Modal Footer Actions -->
+    <div class="modal-footer">
+      <div class="modal-footer-left">
+        <button type="button" class="modal-act-btn" id="jsonValidateBtn">
+          <span class="material-symbols-rounded">check_circle</span>
+          <span>Validate JSON</span>
+        </button>
+      </div>
+      <div style="display:flex; gap:8px">
+        <button type="button" class="modal-secondary-btn" id="jsonCancelBtn">Cancel</button>
+        <button type="button" class="modal-primary-btn" id="jsonSubmitBtn">Add to Toolkit</button>
+      </div>
+    </div>
+
+  </div>
+</div>
